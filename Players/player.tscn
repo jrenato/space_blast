@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bnc4wsc7ao5te"]
+
+[ext_resource type="Texture2D" uid="uid://xsg6qd2r1ajs" path="res://Assets/Space Shooter/playerShip1_blue.png" id="1_hu21y"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_yeulu"]
+radius = 41.1096
+
+[node name="Player" type="RigidBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = 1.5708
+texture = ExtResource("1_hu21y")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_yeulu")
